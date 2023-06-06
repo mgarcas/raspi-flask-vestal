@@ -1,0 +1,22 @@
+/* cube palette from https://mycolor.space/?hex=%23485FC7&sub=1 */
+.spot-palette {
+    /* background-color: #9696CB; */
+    background-color: #EFEDFF;
+}
+
+/* body {
+    background-color: #9696CB;
+    color: #EFEDFF;
+} */
+
+.scroll {
+    overflow-x: auto;
+}
+
+.footer {
+    background-color: #BFA975;
+}
+
+.navbar {
+    border-bottom-style: groove;
+}
