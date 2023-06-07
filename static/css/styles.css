@@ -4,19 +4,20 @@
     background-color: #EFEDFF;
 }
 
-/* body {
-    background-color: #9696CB;
-    color: #EFEDFF;
-} */
-
 .scroll {
     overflow-x: auto;
 }
 
-.footer {
-    background-color: #BFA975;
-}
-
 .navbar {
     border-bottom-style: groove;
+}
+
+.is-cube {
+    background-color: #57918E;
+    color: #EFEDFF;
+}
+
+.is-not-cube {
+    color: #485FC7;
+    /* background-color: #EFEDFF; */
 }

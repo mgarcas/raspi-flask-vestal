@@ -22,6 +22,9 @@
             <a class="navbar-item" href="https://github.com/mgarcas/" target="_blank" rel="noopener noreferrer">
                 <img src="{{ url_for('static', filename='images/logo2.png') }}">
             </a>
+            <a class="navbar-item" href="{{ url_for('index') }}">
+                Home
+            </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
@@ -33,9 +36,9 @@
 
         <div id="navbarBasicExample" class="navbar-menu spot-palette">
             <div class="navbar-start">
-                <a class="navbar-item" href="{{ url_for('index') }}">
+                <!-- <a class="navbar-item" href="{{ url_for('index') }}">
                     Home
-                </a>
+                </a> -->
 
                 <a class="navbar-item">
                     Documentation
@@ -67,7 +70,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-cube">
                             <strong>Sign up</strong>
                         </a>
                         <a class="button is-light">
@@ -80,14 +83,21 @@
     </nav>
 
     {% block content %} {% endblock %}
-    
-    <footer class="footer is-small">
+
+    <footer class="footer is-small is-cube">
         <div class="content has-text-centered">
             <p>
                 <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
                 <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
                 is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
             </p>
+        </div>
+        <div class="column">
+            <div class="column is-one-third is-offset-one-third">
+                <div class="box has-text-centered">
+                    <img src="{{ url_for('static', filename='images/logo2.png') }}" width="250px">
+                </div>
+            </div>
         </div>
     </footer>
 </body>
