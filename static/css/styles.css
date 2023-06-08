@@ -1,3 +1,7 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
 /* cube palette from https://mycolor.space/?hex=%23485FC7&sub=1 */
 .spot-palette {
     /* background-color: #9696CB; */
@@ -20,4 +24,13 @@
 .is-not-cube {
     color: #485FC7;
     /* background-color: #EFEDFF; */
+}
+
+.is-grand-hotel {
+    /* font-family: 'Grand Hotel', cursive; */
+    /* font-family: 'Libre Bodoni', serif; */
+    /* font-family: 'Lobster Two', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Montez', cursive; */
+    /* font-family: 'Pacifico', cursive; */
 }
