@@ -45,6 +45,26 @@
                 </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Raspberry Pi</a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="{{ url_for('temp') }}">
+                            Current GPU Temperature
+                        </a>
+                        <a class="navbar-item" href="{{ url_for('data_temp') }}">
+                            Historic GPU Temperature
+                        </a>
+                        <a class="navbar-item">
+                            PiCamera
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                         More
                     </a>
@@ -66,7 +86,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
