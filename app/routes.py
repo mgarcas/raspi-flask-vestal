@@ -19,12 +19,8 @@ def temp():
         all_data = db.session.execute(db.select(Tempsys).order_by(Tempsys.id)).scalars()
         print(last_data)
         print(all_data.all())
-        return render_template('temp.html')
-
-
-# @app.route('/pi/data_temp')
-# def data_temp():
-#     return render_template('data_temp.html')
+        data = Tempsys.query.order_by(Tempsys.id.desc()).first()
+        return render_template('temp.html', data = data)
 
 
 @app.route('/pi/data_temp')
